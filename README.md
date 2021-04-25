@@ -1,5 +1,5 @@
 # Introduction
-Personal configurations for `鼠鬚管`, a powerful input method for Chinese characters based on Rime@https://github.com/rime/squirrel
+Personal configurations for `鼠鬚管`, a Mac powerful input method for Chinese characters based on Rime@https://github.com/rime/squirrel
 
 
 # Prerequisite
