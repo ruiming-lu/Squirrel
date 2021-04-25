@@ -3,30 +3,31 @@
 
 # Configuration
 ## Structure
-* `./default.custom.yaml`
-  * ```
+* `./default.custom.yaml`:
+  ```
   patch:
-  menu/page_size: 9
-  schema_list:
-    - schema: luna_pinyin
+    menu/page_size: 9           # 一页显示9个词条
+    schema_list:                # 只使用`luna_pinyin`作为主输入法
+        - schema: luna_pinyin
   ```
 
-* `./squirrel.custom.yaml`
+* `./squirrel.custom.yaml`: 
   ```
   patch:
-    style/horizontal: true
-    style/color_scheme: apathy
-    app_options:
-    com.microsoft.VSCode:
-      ascii_mode: true    
-    com.googlecode.iterm2:
-      ascii_mode: true
-    com.runningwithcrayons.Alfred:
-      ascii_mode: true
+    style/horizontal: true      # 横向
+    style/color_scheme: apathy  # 主题使用apathy
+    app_options:                # 在切换到以下应用时, 自动切换成英文输入法
+        com.microsoft.VSCode:   # 用以下命令来获得app名称
+            ascii_mode: true    # cat `/Applications/*.app/Contents/Info.plist" | grep com
+        com.googlecode.iterm2:
+            ascii_mode: true
+        com.runningwithcrayons.Alfred:
+            ascii_mode: true
   ```
 * `./luna_pinyin.custom.yaml`
   ```
   patch:
+    # type "date" or "time"
     engine/translators/@6: lua_translator@date_translator
     engine/translators/@7: lua_translator@time_translator
     'speller/algebra':
@@ -51,8 +52,8 @@
         - derive/ao$/oa/                   # hoa => hao
         - derive/([iu])a(o|ng?)$/a$1$2/    # tain => tian
 
-    translator/enable_user_dict: true
-    translator/dictionary: luna_pinyin.custom
+    translator/enable_user_dict: true       
+    translator/dictionary: luna_pinyin.custom # 载入自定义词库, **关键**
   ```
 * `./luna_pinyin.custom.dict.yaml`
     ```
