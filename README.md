@@ -1,5 +1,5 @@
 # Introduction
-`鼠鬚管`, a powerful input method for Chinese characters based on Rime@rime/squirrel
+`鼠鬚管`, a powerful input method for Chinese characters based on Rime @rime/squirrel
 
 # Prerequisite
 * lua-5.4.3
