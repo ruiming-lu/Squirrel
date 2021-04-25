@@ -1,3 +1,6 @@
+# Introduction
+`鼠鬚管`, a powerful input method for Chinese characters based on Rime@rime/squirrel
+
 # Prerequisite
 * lua-5.4.3
 * 鼠须管0.15.2
@@ -5,8 +8,13 @@
 # Directory
 * `~/Library/Rime/`
 
-# Configuration
-## Structure
+# Step-by-step
+1. https://rime.im/ 官网下载安装鼠须管
+2. http://www.lua.org/ 官网下载配置好lua
+3. 将此repo里所有文件复制/替换到`~/Library/Rime/`
+4. reload/重新部署
+   
+## Core Files
 * `./default.custom.yaml`:
   ```
   patch:
