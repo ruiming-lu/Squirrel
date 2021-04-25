@@ -1,3 +1,7 @@
+# Prerequisite
+* lua-5.4.3
+* 鼠须管0.15.2
+
 # Directory
 * `~/Library/Rime/`
 
