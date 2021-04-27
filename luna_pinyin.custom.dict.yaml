@@ -3,17 +3,18 @@ name: luna_pinyin.custom
 version: "2018.10.05"
 sort: by_weight
 use_preset_vocabulary: true
-import_tables:
+import_tables: 
     #- luna_pinyin.extended # include next 4 dict
     - luna_pinyin
     #- luna_pinyin.hanyu
     - luna_pinyin.poetry
-    - luna_pinyin.cn_en
+    - luna_pinyin.rick
+    #- luna_pinyin.cn_en
     - luna_pinyin.xiandaihanyuchangyongcibiao
-    - luna_pinyin.tanzi_math
+    - luna_pinyin.tanzi_math 
     - luna_pinyin.tanzi_midmath
     - luna_pinyin.computer
-    - luna_pinyin.english
+    #- luna_pinyin.english
     #- luna_pinyin.tanzi_en
     #- luna_pinyin.chengyusuyu
     #- luna_pinyin.sijixingzhenquhuadimingciku
@@ -30,5 +31,7 @@ import_tables:
     - luna_pinyin.emoji.scomper
     #- luna_pinyin.kaomoji
 ...
+
+
 
 

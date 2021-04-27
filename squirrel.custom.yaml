@@ -53,8 +53,8 @@ patch:
       label_font_point: 14
       text_color: 0xFFFFFF
   app_options:
-    com.microsoft.VSCode:
-      ascii_mode: true    
+    #com.microsoft.VSCode:
+    #  ascii_mode: true    
     com.googlecode.iterm2:
       ascii_mode: true
     com.runningwithcrayons.Alfred:
