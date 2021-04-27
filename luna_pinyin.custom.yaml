@@ -1,22 +1,19 @@
 patch:
+  translator/enable_user_dict: true
+  translator/dictionary: luna_pinyin.custom
+
   engine/translators/@1: lua_translator@date_translator
   engine/translators/@2: lua_translator@time_translator
 
   
   engine/translators/@3: table_translator@custom_phrase
-  "schema/dependencies/@next": easy_en
-  # 載入翻譯英文的碼表翻譯器，取名爲 english
-  "engine/translators/@next": table_translator@english
-  # english 翻譯器的設定項
-  english: 
-    dictionary: easy_en
-    spelling_hints: 9
-    enable_completion: true
-    enable_sentence: false
-    initial_quality: -1
-  # end
+  
 
   'speller/algebra/@before 0': xform/^([b-df-hj-np-tv-z])$/$1_/ # 实现模糊简拼 很关键
+  
+
+  "schema/dependencies/@next": easy_en
+
   'speller/algebra':
     #- erase/^xx$/ 
     - derive/^([zcs])h/$1/             # zh, ch, sh => z, c, s
@@ -54,8 +51,7 @@ patch:
     - abbrev/^([a-z]).+$/$1/           # 簡拼（首字母）
     - abbrev/^([zcs]h).+$/$1/          # 簡拼（zh, ch, sh）
 
-  translator/enable_user_dict: true
-  translator/dictionary: luna_pinyin.custom
+
 
 #  engine/filters:
 #    - simplifier
@@ -72,12 +68,12 @@ patch:
 #        - GBKE
 #        - UTF-8
 #      reset: 1
-  # custom_phrase:
-  #   dictionary: ""
-  #   user_dict: custom_phrase
-  #   db_class: stabledb
-  #   enable_completion: false
-  #   enable_sentence: false
-  #   initial_quality: 1
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
  
  

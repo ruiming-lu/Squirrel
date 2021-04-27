@@ -320,7 +320,5 @@ punctuator:
     '/arrow': *arrow
     '/math': *math
     '/money': *money
-    '/googlecommonsymbol': *googlecommonsymbol
-    '/googlemathsymbol': *googlemathsymbol
     '/unit': *unit
     '/biaoqing': *biaoqing

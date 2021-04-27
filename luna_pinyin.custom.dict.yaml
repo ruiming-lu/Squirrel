@@ -5,31 +5,29 @@ sort: by_weight
 use_preset_vocabulary: true
 import_tables: 
     #- luna_pinyin.extended # include next 4 dict
-    - luna_pinyin
+    #- luna_pinyin
     #- luna_pinyin.hanyu
-    - luna_pinyin.poetry
-    - luna_pinyin.rick
+    - dict/clover/clover.base
+    - dict/clover/clover.phrase
+    #- dict/luna_pinyin.poetry
+    - dict/luna_pinyin.english
+    - dict/thuocl/THUOCL_lishimingren
+    - dict/thuocl/THUOCL_diming
+    - dict/thuocl/THUOCL_car
+    - dict/thuocl/THUOCL_IT
+    - dict/thuocl/THUOCL_medical
+    - dict/thuocl/THUOCL_poem
+    - dict/thuocl/THUOCL_food
     #- luna_pinyin.cn_en
-    - luna_pinyin.xiandaihanyuchangyongcibiao
-    - luna_pinyin.tanzi_math 
-    - luna_pinyin.tanzi_midmath
-    - luna_pinyin.computer
-    #- luna_pinyin.english
-    #- luna_pinyin.tanzi_en
-    #- luna_pinyin.chengyusuyu
-    #- luna_pinyin.sijixingzhenquhuadimingciku
-    #- luna_pinyin.jisuanjicihuidaquan
-    #- luna_pinyin.wangluoliuxingxinci
-    #- luna_pinyin.kaifadashenzhuanyongciku
-    #- luna_pinyin.shanghaishichengshixinxijingxuan
-    #- luna_pinyin.zhongguolishicihuidaquan
-    #- luna_pinyin.shanghaihuadaquan
-    #- luna_pinyin.mingxing
-    - luna_pinyin.emoji
-    - luna_pinyin.emoji.apple
-    - luna_pinyin.emoji.cldr
-    - luna_pinyin.emoji.scomper
-    #- luna_pinyin.kaomoji
+    #- dict/luna_pinyin.xiandaihanyuchangyongcibiao
+    - dict/luna_pinyin.tanzi_math 
+    - dict/luna_pinyin.tanzi_midmath
+    - dict/luna_pinyin.computer
+    #- dict/luna_pinyin.english
+    - dict/emoji/luna_pinyin.emoji
+    - dict/emoji/luna_pinyin.emoji.apple
+    - dict/emoji/luna_pinyin.emoji.cldr
+    - dict/emoji/luna_pinyin.emoji.scomper
 ...
 
 
