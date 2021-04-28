@@ -5,5 +5,7 @@ custom_phrase.txt
 installation.yaml
 build/
 .DS_Store
+user.yaml
 
 unused_schema/
+easy_en*
